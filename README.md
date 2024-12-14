@@ -1,24 +1,26 @@
-LiteChart
+# LiteChart
+
 LiteChart is a JavaScript library for creating various types of charts, including line, bar, point, and pie charts. It allows for easy configuration and rendering of charts in web applications.
 
-Features
-Supports multiple chart types: line, bar, point, and pie.
-Customizable chart colors.
-Auto-scaling and grid lines for line, bar, and point charts.
-Pie charts that adapt to container size.
-Responsive and interactive charts.
-Installation
+## Features
+
+- **Supports multiple chart types:** line, bar, point, and pie.
+- **Customizable chart colors.**
+- **Auto-scaling and grid lines** for line, bar, and point charts.
+- **Pie charts** that adapt to container size.
+- **Responsive and interactive charts.**
+
+## Installation
+
 You can install LiteChart via npm:
 
-bash
-
+```bash
 npm install lite-chart-js
 Or include it directly in your HTML file:
 
 html
 
 <script src="path/to/charts.js"></script>
-
 Usage
 Creating a LiteChart
 To create a LiteChart, instantiate the class with the desired options:
@@ -26,9 +28,9 @@ To create a LiteChart, instantiate the class with the desired options:
 javascript
 
 const chart = new LiteChart({
-data: [10, 20, 30, 40, 50],
-type: 'line', // 'line', 'bar', 'point', 'pie'
-colors: ['#4e73df', '#1cc88a', '#36b9cc']
+  data: [10, 20, 30, 40, 50],
+  type: 'line', // 'line', 'bar', 'point', 'pie'
+  colors: ['#4e73df', '#1cc88a', '#36b9cc']
 });
 Rendering the Chart
 Render the chart in a specified HTML element by calling the spawn method with the element's ID:
@@ -64,6 +66,8 @@ html
 </html>
 API
 Constructor
+javascript
+
 new LiteChart(options)
 options: An object containing configuration options for the chart.
 data: An array of numbers representing the data points for the chart.
